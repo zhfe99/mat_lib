@@ -1,0 +1,13 @@
+*.mex*
+*.eps
+*.pdf
+*.mat
+*.pyc
+*.so
+*.o
+*.a
+*.nfs*
+*.desktop
+*.ctags
+.DS_Store
+TAGS
