@@ -1,6 +1,6 @@
 function [boxs, boxG, Lns, Sca] = boxCat(ori, box0s, varargin)
 % Box concatenation.
-% 
+%
 % Input
 %   ori     -  orientation, 'vert' | 'horz'
 %   box0s   -  original box set, 1 x m (cell), 2 x 2
@@ -16,7 +16,7 @@ function [boxs, boxG, Lns, Sca] = boxCat(ori, box0s, varargin)
 %
 % History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 06-02-2011
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 01-08-2012
+%   modify  -  Feng Zhou (zhfe99@gmail.com), 10-08-2015
 
 % function option
 gap = ps(varargin, 'gap', 0);
@@ -54,7 +54,7 @@ if strcmp(ori, 'vert')
 
     boxG = [mis{1} + siz, mis{m}];
 
-% horizontally    
+% horizontally
 elseif strcmp(ori, 'horz')
 
     % width & height
@@ -64,7 +64,7 @@ elseif strcmp(ori, 'horz')
     h = max(hs);
     wGap = w * gap;
     wGap2 = wGap / 2;
-    
+
     % the left-lower corner of each image
     mis{1} = [0; 0];
     for i = 2 : m
@@ -81,7 +81,7 @@ elseif strcmp(ori, 'horz')
     end
 
     boxG = [[0; 0], mis{m} + siz];
-    
+
 else
     error('unknown ori value: %s', ori);
 end
