@@ -1,8 +1,11 @@
 function setAxTick(pos, form, ticks, vals)
-% Set properties of current axes.
+% Set axis tick of current axes.
+%
+% Example
+%   setAxTick('x', '%.1f', [1, 2, 3], [0.1, 0.2, 0.3])
 %
 % Input
-%   box      -  bounding box, d x 2
+%   pos      -  position, 'x' | 'y'
 %   parAx    -  parameter
 %     set    -  setting flag, {'y'} | 'n'
 %     grid   -  grid on flag, 'y' | {'n'}
@@ -15,8 +18,8 @@ function setAxTick(pos, form, ticks, vals)
 %     ang    -  view angle, {[]}
 %
 % History
-%   create   -  Feng Zhou (zhfe99@gmail.com), 01-29-2009
-%   modify   -  Feng Zhou (zhfe99@gmail.com), 05-11-2015
+%   create   -  Feng Zhou (zhfe99@gmail.com), 2009-01
+%   modify   -  Feng Zhou (zhfe99@gmail.com), 2015-11
 
 % dimension
 n = length(ticks);

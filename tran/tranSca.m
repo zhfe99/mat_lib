@@ -11,11 +11,11 @@ function [s, P] = tranSca(P1, P2)
 % Output
 %   s       -  scale
 %   P       -  new 2nd points set, d x n
-%           
-% History   
+%
+% History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 06-10-2012
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 08-31-2012
- 
+%   modify  -  Feng Zhou (zhfe99@gmail.com), 2015-12
+
 % dimension
 [d, n] = size(P1);
 prIn('tranSca', 'd %d, n %d', d, n);
